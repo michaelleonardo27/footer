@@ -1,0 +1,2 @@
+# footer
+ responsive footer examples
