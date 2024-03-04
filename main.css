@@ -27,3 +27,16 @@ body, html {
     font-size: 24px;
     font-weight: bold;
   }
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  /* For desktop devices */
+  @media screen and (min-width: 768px) {
+    .footer-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
