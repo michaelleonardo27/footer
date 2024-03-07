@@ -13,9 +13,12 @@ body, html {
   }
 
   .footer-wrapper {
+    /* wrap the full width of the page*/
     width:100%;
+    /*so i can use css grid*/
     display: grid;
     grid-gap: 3px;
+    /* space around the whole box */
     padding:10px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto auto;
@@ -28,7 +31,6 @@ body, html {
 .contact-wrapper {
     grid-area: c;
 }
-
 .circle-wrapper{
   grid-area: w;
 }
@@ -56,8 +58,8 @@ h5{margin-top:5px;}
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: auto auto auto;
       grid-template-areas: 
-          ". c c c c c c . . w . ."
-          ". c c c c c c . . s . ."
-          ". c c c c c c . . b . .";
+          ". . w c c c c c c  . . ."
+          ". . s c c c c c c  . . ."
+          ". . b c c c c c c  . . .";
   }
   }
